@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=3.5cm,bottom=3.5cm,left=2.5cm,right=2.5cm,marginparwidth=1.75cm]{geometry}
+\usepackage{graphicx}
+\usepackage[french,english]{babel} 
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{cleveref}
+\usepackage[labelfont=bf]{caption}
+
+
+\pagestyle{fancy}
+\lhead{Ecole des Mines de Paris\hspace{1cm}---}
+\chead{Trimestre Recherche}
+\rhead{---\hspace{1cm}Année scolaire 2020-2021}
+\begin{document}
+\begin{center}
+    \begin{Large}\textbf{TITRE DU STAGE DE RECHERCHE}\end{Large}
+    
+    \vspace{1cm}
+    \begin{large}\textbf{\underline{A.Auteur$^a$}, A.Auteur$^b$}\end{large}
+    
+    \vspace{0.5cm}
+    a. Affiliation + email\\
+    b. Affiliation + email
+    \vspace{1cm}
+\end{center}
+
+\noindent\textbf{Mots clés : }mot-clé 1 ; mot-clé 2 ; …\\
+\\
+\textbf{Résumé : }\\
+\textit{Résumé du stage de recherche}
+\section{Introduction}
+Le texte doit être rédigé en anglais, sauf dérogation accordée par les porteurs du trimestre recherche. Le contenu de l’article ne doit pas être confidentiel.
+\section{Paragraphe 1}
+\subsection{Longueur du texte}
+Le format souhaité un article scientifique de 20 pages maximum tout compris, synthétisant les résultats du stage de recherche.
+\subsection{Contenu}
+L’article doit contenir les rubriques suivantes :
+\begin{enumerate}
+    \item Une introduction présentant le sujet dans son contexte scientifique. Cette section devra contenir des références (exemple [1] ou encore [2]) pour permettre au lecteur de situer le travail par rapport à l’état de l’art et mettre en avant l’originalité du travail.
+    \item Une présentation des méthodes et outils employés durant le stage de recherche.
+    \item Une présentation des principaux résultats
+    \item Une discussion, une conclusion, des perspectives
+\end{enumerate}
+\subsection{Mise en forme figures, tables, formules}
+Les figures (Fig.\ref{fig:Fig. 1}), tables (Table ~\ref{tab:Table 1}) et équations (Eq. \ref{eq:equation1}) seront numérotées et un renvoi sera inséré dans le texte.
+\begin{equation}
+y =  ax+b
+\label{eq:equation1}
+\end{equation}
+Pensez à conserver une taille suffisante aux légendes des graphes pour une bonne lisibilité.\\
+\\
+\begin{table}[htb]\centering
+\begin{tabular}{ccccc}
+\toprule
+     Colonne 1&Colonne 2&Colonne 3&\multicolumn{2}{c}{colonne 4}\\\cmidrule{4-5}
+      &	 &	&	Sous-colonne 4a	&Sous-colonne 4b\\ \midrule
+      Ligne 1	&Ligne 1&	Ligne 1&	Ligne 1&	Ligne 1\\
+      Ligne 2	&Ligne 2&	Ligne 2	&Ligne 2&	Ligne 2\\
+      \bottomrule
+\end{tabular}
+\caption{Données super importantes}
+\label{tab:Table 1}
+\end{table}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{pic.png}
+    \caption{\textit{Graphe très intéressant et très bien choisi}}
+    \label{fig:Fig. 1}
+\end{figure}
+
+\begin{table}[!h]\centering
+\begin{tabular}{ccccc}
+\toprule
+     Colonne 1&Colonne 2&Colonne 3&\multicolumn{2}{c}{colonne 4}\\\cmidrule{4-5}
+      &	 &	&	Sous-colonne 4a	&Sous-colonne 4b\\ \midrule
+      Ligne 1	&Ligne 1&	Ligne 1&	Ligne 1&	Ligne 1\\
+      Ligne 2	&Ligne 2&	Ligne 2	&Ligne 2&	Ligne 2\\
+      Ligne 3	&Ligne 3&	Ligne 3	&Ligne 3&	Ligne 3\\
+      \bottomrule
+\end{tabular}
+\label{Table 2}
+\caption{Données super importantes}
+\end{table}
+
+\section{Conclusion}
+La date de remise de vos articles est définie par les porteurs de vos trimestre recherche, merci de la respecter.
+\section*{Remerciements}
+Si besoin
+\section*{Références}
+\noindent{[}1] C. Smith, J.C. Green, Titre de l’article, Titre du journal, 10 (2009) 55-72\\
+{[}2] M. Truk, C. Bidul. Titre du bouquin, John Wiley and Sons, New York, 1973\\
+{[}3] P. Machin, Titre de la thèse, Thèse, Université Poitiers, 1992\\
+{[}4] D. Pierre, J.-P. Paul, B. Jacques, Titre communication, in: D. Editor, G. Editeur, ( éd.), Proceedings of Conference XXX , Publisher, Paris, France, 1995, pp. 3–6
+
+\end{document}
